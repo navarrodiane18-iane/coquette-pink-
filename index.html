@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff4f8" />
+  <title>Petal & Pixel | My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="Petal and Pixel home">
+        <span class="brand-mark">✿</span>
+        <span><strong>petal<span>&</span>pixel</strong><small>PERSONAL SPACE</small></span>
+      </a>
+      <div class="profile-mini">
+        <div class="avatar">D</div>
+        <div><strong>Diane's space</strong><small>Creative in progress ✧</small></div>
+      </div>
+      <p class="nav-label">WORKSPACE</p>
+      <nav class="nav-links" aria-label="Main navigation">
+        <button class="nav-link active" data-view="dashboard"><span>⌂</span> Dashboard</button>
+        <button class="nav-link" data-view="portfolio"><span>♡</span> My portfolio</button>
+        <button class="nav-link" data-view="records"><span>▤</span> Saved records <span class="nav-count" id="recordCount">3</span></button>
+      </nav>
+      <p class="nav-label">PERSONAL</p>
+      <nav class="nav-links">
+        <button class="nav-link" data-view="about"><span>✧</span> About me</button>
+        <button class="nav-link" data-view="login"><span>♧</span> Sign in</button>
+      </nav>
+      <div class="sidebar-note">
+        <span class="tiny-flower">✿</span>
+        <p>Little by little,<br><em>beautiful things grow.</em></p>
+        <span class="note-sparkle">✧</span>
+      </div>
+      <div class="sidebar-bottom"><span class="status-dot"></span> Made with care <span>♡</span></div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <div class="breadcrumb">My workspace <span>/</span> <strong id="crumbTitle">Dashboard</strong></div>
+        <div class="top-actions">
+          <span class="today-pill"><span>✿</span> your little corner of the internet</span>
+          <button class="icon-button" id="themeButton" aria-label="Toggle cozy mode" title="Toggle cozy mode">☼</button>
+          <button class="login-top" data-view="login">Sign in <span>↗</span></button>
+        </div>
+      </header>
+
+      <section class="view active-view" id="view-dashboard">
+        <div class="welcome-row">
+          <div>
+            <p class="eyebrow">THURSDAY, YOUR DAY TO BLOOM <span>✿</span></p>
+            <h1>A little space<br>to <em>dream bigger.</em></h1>
+            <p class="intro">Welcome to my corner of the web — a soft place for ideas, projects, and everything I'm growing into.</p>
+            <div class="welcome-actions">
+              <button class="primary-button" data-view="portfolio">Explore my work <span>↗</span></button>
+              <button class="text-button" data-view="about">A little about me <span>♡</span></button>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Decorative pink flower illustration">
+            <div class="hero-circle circle-one"></div><div class="hero-circle circle-two"></div>
+            <div class="hero-card">
+              <span class="hero-sparkle s1">✧</span><span class="hero-sparkle s2">✦</span>
+              <div class="flower-art">✿</div>
+              <div class="hero-card-caption">in my <em>soft era</em></div>
+            </div>
+            <span class="floating-tag tag-top">♡ stay curious</span>
+            <span class="floating-tag tag-bottom">made of little dreams ✧</span>
+          </div>
+        </div>
+
+        <div class="section-heading">
+          <div><p class="eyebrow">YOUR OVERVIEW</p><h2>Today, at a glance</h2></div>
+          <span class="date-chip" id="currentDate">A fresh start ✧</span>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-icon pink-icon">♡</div><span class="stat-label">Portfolio projects</span><strong id="projectStat">04</strong><small>small steps, big dreams</small><span class="stat-decoration">✧</span></article>
+          <article class="stat-card"><div class="stat-icon lilac-icon">▤</div><span class="stat-label">Saved records</span><strong id="savedStat">03</strong><small>ideas worth keeping</small><span class="stat-decoration">✿</span></article>
+          <article class="stat-card"><div class="stat-icon peach-icon">✧</div><span class="stat-label">Skills in progress</span><strong>06</strong><small>always learning something</small><span class="stat-decoration">♡</span></article>
+          <article class="stat-card quote-stat"><span class="quote-mark">“</span><p>She believed she could, so she kept <em>creating.</em></p><small>— a note to self</small></article>
+        </div>
+
+        <div class="content-grid">
+          <section class="panel featured-panel">
+            <div class="panel-heading"><div><p class="eyebrow">A FEW FAVORITES</p><h2>Featured projects</h2></div><button class="small-link" data-view="portfolio">View all ↗</button></div>
+            <div class="featured-list">
+              <article class="project-row"><div class="project-thumb thumb-one">✿</div><div class="project-info"><strong>Petal Notes</strong><span>A tiny digital journal concept</span><div class="tag-list"><i>UI design</i><i>Personal</i></div></div><span class="row-arrow">↗</span></article>
+              <article class="project-row"><div class="project-thumb thumb-two">♡</div><div class="project-info"><strong>Study Bloom</strong><span>A gentle student planner</span><div class="tag-list"><i>Web concept</i><i>Student life</i></div></div><span class="row-arrow">↗</span></article>
+              <article class="project-row"><div class="project-thumb thumb-three">✧</div><div class="project-info"><strong>Little Shop</strong><span>A playful online shop layout</span><div class="tag-list"><i>E-commerce</i><i>Practice</i></div></div><span class="row-arrow">↗</span></article>
+            </div>
+          </section>
+          <section class="panel quick-panel">
+            <div class="panel-heading"><div><p class="eyebrow">A LITTLE REMINDER</p><h2>Keep growing</h2></div><span class="mini-flower">❀</span></div>
+            <p class="quick-copy">You don't have to have it all figured out. Keep showing up, keep learning, and let your ideas bloom in their own time.</p>
+            <div class="progress-label"><span>My learning journey</span><strong>in progress</strong></div>
+            <div class="progress-track"><span></span></div>
+            <button class="soft-button" data-view="records">Organize my ideas <span>→</span></button>
+          </section>
+        </div>
+        <footer class="footer">Designed with a little pink magic <span>♡</span> <span class="footer-right">© <span class="year"></span> petal&pixel</span></footer>
+      </section>
+
+      <section class="view" id="view-portfolio">
+        <div class="page-title"><p class="eyebrow">THINGS I'VE BEEN MAKING ✧</p><h1>My little <em>portfolio.</em></h1><p class="intro">A collection of experiments, ideas, and projects made with curiosity.</p></div>
+        <div class="portfolio-grid">
+          <article class="portfolio-card"><div class="portfolio-art art-pink"><span>✿</span><small>01 / PERSONAL</small></div><div class="portfolio-card-body"><div><h3>Petal Notes</h3><p>A cozy journal for everyday thoughts.</p></div><span class="round-arrow">↗</span><div class="tag-list"><i>UI concept</i><i>Creative</i></div></div></article>
+          <article class="portfolio-card"><div class="portfolio-art art-lilac"><span>♡</span><small>02 / STUDENT LIFE</small></div><div class="portfolio-card-body"><div><h3>Study Bloom</h3><p>A planner that makes school feel softer.</p></div><span class="round-arrow">↗</span><div class="tag-list"><i>Web design</i><i>Productivity</i></div></div></article>
+          <article class="portfolio-card"><div class="portfolio-art art-peach"><span>✧</span><small>03 / E-COMMERCE</small></div><div class="portfolio-card-body"><div><h3>Little Shop</h3><p>A playful storefront for lovely finds.</p></div><span class="round-arrow">↗</span><div class="tag-list"><i>Layout</i><i>Shopping</i></div></div></article>
+          <article class="portfolio-card"><div class="portfolio-art art-rose"><span>❀</span><small>04 / EXPERIMENT</small></div><div class="portfolio-card-body"><div><h3>Rosewater UI</h3><p>Exploring color, type, and tiny details.</p></div><span class="round-arrow">↗</span><div class="tag-list"><i>Visual design</i><i>Practice</i></div></div></article>
+        </div>
+        <div class="callout-banner"><span class="callout-flower">✿</span><div><h3>Every expert was once a beginner.</h3><p>This portfolio is a work in progress — and that's the lovely part.</p></div><span class="callout-heart">♡</span></div>
+        <footer class="footer">Made with intention <span>♡</span> <span class="footer-right">© <span class="year"></span> petal&pixel</span></footer>
+      </section>
+
+      <section class="view" id="view-records">
+        <div class="page-title"><p class="eyebrow">YOUR DIGITAL KEEPSAKES ✧</p><h1>Saved <em>records.</em></h1><p class="intro">Keep track of ideas, tasks, and little things you don't want to forget.</p></div>
+        <div class="records-toolbar"><label class="search-box"><span>⌕</span><input type="search" id="recordSearch" placeholder="Search your records..." aria-label="Search records"></label><button class="primary-button" id="addRecordButton">＋ Add a record</button></div>
+        <div class="records-summary"><span><strong id="visibleCount">3</strong> saved little things</span><span class="records-tip">✿ Your records stay in this browser on this device.</span></div>
+        <div class="records-list" id="recordsList"></div>
+        <div class="empty-state hidden" id="emptyState"><span>♡</span><h3>No records found</h3><p>Try another search or add a new little note.</p></div>
+        <footer class="footer">Keep the things that matter <span>♡</span> <span class="footer-right">© <span class="year"></span> petal&pixel</span></footer>
+      </section>
+
+      <section class="view" id="view-about">
+        <div class="about-layout">
+          <div class="about-illustration"><div class="about-sticker">hello,<br><em>lovely!</em></div><div class="about-big-flower">✿</div><span class="about-star star-a">✧</span><span class="about-star star-b">♡</span><span class="about-caption">a work in bloom</span></div>
+          <div class="about-copy"><p class="eyebrow">THE PERSON BEHIND THE PIXELS</p><h1>A little about <em>me.</em></h1><p>Hi, I'm Diane — an IT student learning to turn ideas into thoughtful digital experiences. I love creative layouts, soft colors, and the feeling of making something work for the very first time.</p><p>This space is where I collect projects, practice new skills, and celebrate the small wins along the way. I'm still learning, and I'm proud of that.</p><div class="skill-heading">Things I'm exploring <span>✧</span></div><div class="skill-cloud"><span>HTML & CSS</span><span>JavaScript</span><span>UI design</span><span>Figma</span><span>Problem solving</span><span>Creative thinking</span></div><a class="email-link" href="mailto:hello@example.com">Let's connect <span>↗</span></a><small class="edit-note">Tip: edit this text and email in index.html to make it yours.</small></div>
+        </div>
+        <footer class="footer">Thanks for stopping by <span>♡</span> <span class="footer-right">© <span class="year"></span> petal&pixel</span></footer>
+      </section>
+
+      <section class="view" id="view-login">
+        <div class="login-layout">
+          <div class="login-art"><span class="login-spark spark-one">✧</span><div class="login-flower">✿</div><span class="login-spark spark-two">♡</span><p>your dreams deserve<br><em>a pretty place to land.</em></p></div>
+          <div class="login-card"><p class="eyebrow">WELCOME BACK, LOVELY</p><h1>Sign in to your <em>space.</em></h1><p class="login-description">This demo login is only for exploring the interface.</p><form id="loginForm"><label for="loginEmail">Email address</label><input type="email" id="loginEmail" placeholder="you@example.com" required><label for="loginPassword">Password</label><input type="password" id="loginPassword" placeholder="At least 4 characters" minlength="4" required><button class="primary-button full-button" type="submit">Sign in <span>↗</span></button><p class="form-message" id="loginMessage" aria-live="polite"></p></form><div class="login-divider"><span>or</span></div><button class="guest-button" id="guestButton">Continue as a guest ♡</button><p class="security-note">✿ Demo only: no real account is created and no password is sent anywhere.</p></div>
+        </div>
+        <footer class="footer">A gentle place to begin again <span>♡</span> <span class="footer-right">© <span class="year"></span> petal&pixel</span></footer>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="recordModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <form class="record-modal" id="recordForm">
+      <button type="button" class="modal-close" id="closeModal" aria-label="Close">×</button>
+      <p class="eyebrow">A THOUGHT TO KEEP ✧</p><h2 id="modalTitle">Add a little <em>record.</em></h2>
+      <label for="recordTitle">Title</label><input id="recordTitle" maxlength="70" placeholder="e.g. Portfolio idea" required>
+      <label for="recordCategory">Category</label><select id="recordCategory"><option>Idea</option><option>Task</option><option>Project</option><option>Reminder</option></select>
+      <label for="recordDetails">Details</label><textarea id="recordDetails" rows="3" maxlength="300" placeholder="Write a little note..."></textarea>
+      <div class="modal-actions"><button type="button" class="text-button" id="cancelModal">Cancel</button><button type="submit" class="primary-button">Save record ♡</button></div>
+    </form>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
